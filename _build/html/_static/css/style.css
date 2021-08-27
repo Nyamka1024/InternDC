@@ -1,0 +1,9 @@
+@import 'theme.css';
+
+body {
+	background: pink;
+}
+
+.wy-nav-content {
+	max-width: 1050px;
+}

@@ -1,0 +1,592 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Төрийн мэдээлэл солилцооны системд бүртгэлтэй веб сервисийн жагсаалт &mdash; Төрийн мэдээлэл солилцооны систем 1.1.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/tabs.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="1. Холбогдох заавар" href="connection.html" />
+    <link rel="prev" title="Танилцуулга" href="info.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.1.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Танилцуулга</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="info.html">Танилцуулга</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Веб сервисийн жагсаалт</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Мета сервис ашиглах</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Веб сервисийн жагсаалт</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ws100001-listaccess">WS100001_listAccess</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100002-mock">WS100002_mock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100004-getlogcount">WS100004_getLogCount</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100101-getcitizenidcardinfo">WS100101_getCitizenIDCardInfo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Холбогдох заавар</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="connection.html">1. Холбогдох заавар</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc1.html">2. Системд холбогдох</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc2.html">3. Гэрчилгээ нэмэх</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc3.html">4. Тохиргоо шалгах</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc4.html">5. Веб сервис дуудах</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Бусад</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../others/example_codes.html">Клиент жишээ кодууд</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../others/faq.html">Түгээмэл асуулт, хариулт(FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../others/others.html">Холбоо барих</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Төрийн мэдээлэл солилцооны систем</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Төрийн мэдээлэл солилцооны системд бүртгэлтэй веб сервисийн жагсаалт</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/docs/services.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Төрийн мэдээлэл солилцооны системд бүртгэлтэй веб сервисийн жагсаалт<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Мета сервис ашиглах<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Мета веб сервис нь танай байгууллага системтэй холбогдсон тохиолдолд хандалтыг тест хийх, веб сервисүүдийн төлөв шалгах, хандах эрхийн мэдээллийн жагсаалт авах зэрэг мэдээллийг дамжуулах боломжыг олгох юм. Мета веб сервисүүдийн жагсаалтыг ашигласнаар дотоод автомат мониторинг, хяналт хийх зэрэгт ашиглаж болно.</p>
+</div></blockquote>
+<p><strong>Мета сервис</strong> - <a href="../_static/meta-1.2.0.xml" target="_blank">https://xyp.gov.mn/meta-1.2.0/ws?WSDL</a>.</p>
+<table class="colwidths-auto docutils align-default" id="id4">
+<caption><span class="caption-text">Мета Сервис</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Сервисийн нэр</p></th>
+<th class="head"><p>Тодорхойлолт</p></th>
+<th class="head"><p>Иргэн баталгаажуулах эсэх</p></th>
+<th class="head"><p>Үйлчилгээний ажилтан баталгаажуулах эсэх</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#listaccess"><span class="std std-ref">WS100001_listAccess</span></a></p></td>
+<td><p>Зөвшөөрөгдсөн веб сервис болон түүний гаралтын жагсаалтыг авах сервис</p></td>
+<td><p>Үгүй</p></td>
+<td><p>Үгүй</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#mock"><span class="std std-ref">WS100002_mock</span></a></p></td>
+<td><p>ХУР системтэй холболт шалгах веб сервис</p></td>
+<td><p>Үгүй</p></td>
+<td><p>Үгүй</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#getlogcount"><span class="std std-ref">WS100004_getLogCount</span></a></p></td>
+<td><p>Сервис хандалтын тоог лавлах сервис</p></td>
+<td><p>Үгүй</p></td>
+<td><p>Үгүй</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h2>Веб сервисийн жагсаалт<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Төрийн мэдээлэл солилцооны систем нь SOAP 1.2 протокол ашиглан XML бүтэцтэй мэдээллийг солилцоно.</p>
+<p><strong>Иргэний мэдээлэл</strong> - <a href="../_static/citizen-1.2.0.xml" target="_blank">https://xyp.gov.mn/citizen-1.2.0/ws?WSDL</a>.</p>
+<table class="colwidths-auto docutils align-default" id="id5">
+<caption><span class="caption-text">Веб Сервис</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Сервисийн нэр</p></th>
+<th class="head"><p>Тодорхойлолт</p></th>
+<th class="head"><p>Иргэн баталгаажуулах эсэх</p></th>
+<th class="head"><p>Үйлчилгээний ажилтан баталгаажуулах эсэх</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#idcardinfo"><span class="std std-ref">WS100101_getCitizenIDCardInfo</span></a></p></td>
+<td><p>Иргэний үнэмлэхний мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100102_getCitizenBirthInfo</p></td>
+<td><p>Иргэний төрсний гэрчилгээний мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100103_getCitizenAddressInfo</p></td>
+<td><p>Иргэний хаягийн мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100104_getCitizenMarriageInfo</p></td>
+<td><p>Иргэн гэрлэлтийн мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100105_getCitizenMarriageDivorceInfo</p></td>
+<td><p>Иргэн гэрлэлт цуцалсан тухай мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100106_authorizeCitizen</p></td>
+<td><p>Иргэнийг хурууны хээгээр баталгаажуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100107_checkCitizenInfo</p></td>
+<td><p>Иргэний мэдээлэл тулгах сервис</p></td>
+<td><p>Үгүй</p></td>
+<td><p>Үгүй</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100111_aimagCityInfo</p></td>
+<td><p>Хот эсвэл Аймаг хайх сервис</p></td>
+<td><p>Үгүй</p></td>
+<td><p>Үгүй</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100112_soumDistrictInfo</p></td>
+<td><p>Дүүрэг эсвэл Сум хайх сервис</p></td>
+<td><p>Үгүй</p></td>
+<td><p>Үгүй</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100113_bagKhorooInfo</p></td>
+<td><p>Баг эсвэл Хороо хайх сервис</p></td>
+<td><p>Үгүй</p></td>
+<td><p>Үгүй</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100114_addressStreetInfo</p></td>
+<td><p>Гудамжны мэдээлэл хайх сервис</p></td>
+<td><p>Үгүй</p></td>
+<td><p>Үгүй</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100115_addressApartmentInfo</p></td>
+<td><p>Байрны мэдээлэл хайх сервис</p></td>
+<td><p>Үгүй</p></td>
+<td><p>Үгүй</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100116_addressTypeInfo</p></td>
+<td><p>Хаягийн төрлийн мэдээлэл хайх сервис</p></td>
+<td><p>Үгүй</p></td>
+<td><p>Үгүй</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100117_checkCitizenAddressInfo</p></td>
+<td><p>Хаягийн мэдээлэл тулгах сервис</p></td>
+<td><p>Үгүй</p></td>
+<td><p>Үгүй</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100125_checkCitizenRegnum</p></td>
+<td><p>Иргэний регистрийн дугаар үнэн эсэхийг шалгах сервис</p></td>
+<td><p>Үгүй</p></td>
+<td><p>Үгүй</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100128_getCitizenNoMarriegeInfo</p></td>
+<td><p>Гэрлэлт бүртгэлгүй тухай мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="ws100001-listaccess">
+<span id="listaccess"></span><h3>WS100001_listAccess<a class="headerlink" href="#ws100001-listaccess" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>Зөвшөөрөгдсөн веб сервис болон түүний гаралтын жагсаалтыг авах сервис</p>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p>WS100001_listAccess-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 37%" />
+<col style="width: 37%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөдлийн төрөл</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><blockquote>
+<div><p>WS100001_listAccess-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+</div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 49%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Нэр</p></th>
+<th class="head"><p>Тайлбар</p></th>
+<th class="head"><p>Өгөдлийн төрөл</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>id</p></td>
+<td><p>Системийн ID</p></td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>approvedServices</p></td>
+<td><p>Зөвшөөрөгдсөн веб сервисийн жагсаалт</p></td>
+<td><p>List&lt;WebService&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>certPath</p></td>
+<td><p>Сертификатын байрлах зам</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-odd"><td><p>accessToken</p></td>
+<td><p>Хандах token утга</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>registered</p></td>
+<td><p>Бүртгэлтэй эсэхийг</p></td>
+<td><p>Boolean</p></td>
+</tr>
+<tr class="row-odd"><td><p>orgId</p></td>
+<td><p>Байгууллагын ID</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>orgTitle</p></td>
+<td><p>Байгууллагын нэр</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-odd"><td><p>certFingerprint</p></td>
+<td><p>Сертификатын хурууны хээний утга</p></td>
+<td><p>String</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100002-mock">
+<span id="mock"></span><h3>WS100002_mock<a class="headerlink" href="#ws100002-mock" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-1-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-1-1-0" name="1-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-1-1-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-1-1-1" name="1-1" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-1-1-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-1-1-2" name="1-2" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-1-1-0" class="sphinx-tabs-panel" id="panel-1-1-0" name="1-0" role="tabpanel" tabindex="0"><p>ХУР системтэй холболт шалгах веб сервис</p>
+</div><div aria-labelledby="tab-1-1-1" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-1" name="1-1" role="tabpanel" tabindex="0"><p>WS100002_mock-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 37%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Нэр</p></th>
+<th class="head"><p>Тайлбар</p></th>
+<th class="head"><p>Өгөдлийн төрөл</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>test</p></td>
+<td><p>test</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-1-1-2" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-2" name="1-2" role="tabpanel" tabindex="0"><blockquote>
+<div><p>WS100002_mock-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+</div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 49%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Нэр</p></th>
+<th class="head"><p>Тайлбар</p></th>
+<th class="head"><p>Өгөдлийн төрөл</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>param1</p></td>
+<td><p>Параметр 1</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-odd"><td><p>param2</p></td>
+<td><p>Параметр 2</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>param3</p></td>
+<td><p>Параметр 3</p></td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>param4</p></td>
+<td><p>Параметр 4</p></td>
+<td><p>Date</p></td>
+</tr>
+<tr class="row-even"><td><p>param5</p></td>
+<td><p>Параметр 5</p></td>
+<td><p>boolean</p></td>
+</tr>
+<tr class="row-odd"><td><p>param6</p></td>
+<td><p>Параметр 6</p></td>
+<td><p>boolean</p></td>
+</tr>
+<tr class="row-even"><td><p>param7</p></td>
+<td><p>Параметр 7</p></td>
+<td><p>float</p></td>
+</tr>
+<tr class="row-odd"><td><p>param8</p></td>
+<td><p>Параметр 8</p></td>
+<td><p>List&lt;String&gt;</p></td>
+</tr>
+<tr class="row-even"><td><p>param9</p></td>
+<td><p>Параметр 9</p></td>
+<td><p>byte[]</p></td>
+</tr>
+<tr class="row-odd"><td><p>param10</p></td>
+<td><p>Параметр 10</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>param11</p></td>
+<td><p>Параметр 11</p></td>
+<td><p>MockSubData</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100004-getlogcount">
+<span id="getlogcount"></span><h3>WS100004_getLogCount<a class="headerlink" href="#ws100004-getlogcount" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-2-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-2-2-0" name="2-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-2-2-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-2-2-1" name="2-1" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-2-2-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-2-2-2" name="2-2" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-2-2-0" class="sphinx-tabs-panel" id="panel-2-2-0" name="2-0" role="tabpanel" tabindex="0"><p>Сервис хандалтын тоог лавлах сервис</p>
+</div><div aria-labelledby="tab-2-2-1" class="sphinx-tabs-panel" hidden="true" id="panel-2-2-1" name="2-1" role="tabpanel" tabindex="0"><p>WS100004_getLogCount-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 37%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Нэр</p></th>
+<th class="head"><p>Тайлбар</p></th>
+<th class="head"><p>Өгөдлийн төрөл</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>operationName</p></td>
+<td><p>Сервисийн нэр</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-2-2-2" class="sphinx-tabs-panel" hidden="true" id="panel-2-2-2" name="2-2" role="tabpanel" tabindex="0"><blockquote>
+<div><p>WS100004_getLogCount-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+</div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 37%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Нэр</p></th>
+<th class="head"><p>Тайлбар</p></th>
+<th class="head"><p>Өгөдлийн төрөл</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>count</p></td>
+<td><p>Нийт хандалтын тоо</p></td>
+<td><p>int</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100101-getcitizenidcardinfo">
+<span id="idcardinfo"></span><h3>WS100101_getCitizenIDCardInfo<a class="headerlink" href="#ws100101-getcitizenidcardinfo" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="connection.html" class="btn btn-neutral float-right" title="1. Холбогдох заавар" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="info.html" class="btn btn-neutral float-left" title="Танилцуулга" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021 он. Үндэсний Дата Төв УТҮГ. Бүх эрх хуулиар хамгаалагдсан.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
