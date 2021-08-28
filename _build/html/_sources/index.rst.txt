@@ -30,6 +30,7 @@
 .. toctree::
    :maxdepth: 2
    :caption: Бусад
+   :titlesonly:
 
    Клиент жишээ кодууд <others/example_codes>
    Түгээмэл асуулт, хариулт(FAQ) <others/faq>

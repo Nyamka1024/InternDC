@@ -106,6 +106,21 @@
 <li class="toctree-l3"><a class="reference internal" href="#ws100002-mock">WS100002_mock</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ws100004-getlogcount">WS100004_getLogCount</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ws100101-getcitizenidcardinfo">WS100101_getCitizenIDCardInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100102-getcitizenbirthinfo">WS100102_getCitizenBirthInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100103-getcitizenaddressinfo">WS100103_getCitizenAddressInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100104-getcitizenmarriageinfo">WS100104_getCitizenMarriageInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100105-getcitizenmarriagedivorceinfo">WS100105_getCitizenMarriageDivorceInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100106-authorizecitizen">WS100106_authorizeCitizen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100107-checkcitizeninfo">WS100107_checkCitizenInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100111-aimagcityinfo">WS100111_aimagCityInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100112-soumdistrictinfo">WS100112_soumDistrictInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100113-bagkhorooinfo">WS100113_bagKhorooInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100114-addressstreetinfo">WS100114_addressStreetInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100115-addressapartmentinfo">WS100115_addressApartmentInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100116-addresstypeinfo">WS100116_addressTypeInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100117-checkcitizenaddressinfo">WS100117_checkCitizenAddressInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100125-checkcitizenregnum">WS100125_checkCitizenRegnum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ws100128-getcitizennomarriegeinfo">WS100128_getCitizenNoMarriegeInfo</a></li>
 </ul>
 </li>
 </ul>
@@ -232,92 +247,220 @@
 <p>Төрийн мэдээлэл солилцооны систем нь SOAP 1.2 протокол ашиглан XML бүтэцтэй мэдээллийг солилцоно.</p>
 <p><strong>Иргэний мэдээлэл</strong> - <a href="../_static/citizen-1.2.0.xml" target="_blank">https://xyp.gov.mn/citizen-1.2.0/ws?WSDL</a>.</p>
 <table class="colwidths-auto docutils align-default" id="id5">
-<caption><span class="caption-text">Веб Сервис</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
-<thead>
-<tr class="row-odd"><th class="head"><p>Сервисийн нэр</p></th>
-<th class="head"><p>Тодорхойлолт</p></th>
-<th class="head"><p>Иргэн баталгаажуулах эсэх</p></th>
-<th class="head"><p>Үйлчилгээний ажилтан баталгаажуулах эсэх</p></th>
-</tr>
-</thead>
+<caption><span class="caption-text">Иргэний мэдээллийн веб сервис</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
 <tbody>
+<tr class="row-odd"><td><p>Сервисийн нэр</p></td>
+<td><p>Тодорхойлолт</p></td>
+<td><p>Иргэн баталгаажуулах эсэх</p></td>
+<td><p>Үйлчилгээний ажилтан баталгаажуулах эсэх</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#idcardinfo"><span class="std std-ref">WS100101_getCitizenIDCardInfo</span></a></p></td>
 <td><p>Иргэний үнэмлэхний мэдээлэл дамжуулах сервис</p></td>
 <td><p>Тийм</p></td>
 <td><p>Тийм</p></td>
 </tr>
-<tr class="row-odd"><td><p>WS100102_getCitizenBirthInfo</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#birthinfo"><span class="std std-ref">WS100102_getCitizenBirthInfo</span></a></p></td>
 <td><p>Иргэний төрсний гэрчилгээний мэдээлэл дамжуулах сервис</p></td>
 <td><p>Тийм</p></td>
 <td><p>Тийм</p></td>
 </tr>
-<tr class="row-even"><td><p>WS100103_getCitizenAddressInfo</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#addressinfo"><span class="std std-ref">WS100103_getCitizenAddressInfo</span></a></p></td>
 <td><p>Иргэний хаягийн мэдээлэл дамжуулах сервис</p></td>
 <td><p>Тийм</p></td>
 <td><p>Тийм</p></td>
 </tr>
-<tr class="row-odd"><td><p>WS100104_getCitizenMarriageInfo</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#marriageinfo"><span class="std std-ref">WS100104_getCitizenMarriageInfo</span></a></p></td>
 <td><p>Иргэн гэрлэлтийн мэдээлэл дамжуулах сервис</p></td>
 <td><p>Тийм</p></td>
 <td><p>Тийм</p></td>
 </tr>
-<tr class="row-even"><td><p>WS100105_getCitizenMarriageDivorceInfo</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#divorceinfo"><span class="std std-ref">WS100105_getCitizenMarriageDivorceInfo</span></a></p></td>
 <td><p>Иргэн гэрлэлт цуцалсан тухай мэдээлэл дамжуулах сервис</p></td>
 <td><p>Тийм</p></td>
 <td><p>Тийм</p></td>
 </tr>
-<tr class="row-odd"><td><p>WS100106_authorizeCitizen</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#authorizecitizen"><span class="std std-ref">WS100106_authorizeCitizen</span></a></p></td>
 <td><p>Иргэнийг хурууны хээгээр баталгаажуулах сервис</p></td>
 <td><p>Тийм</p></td>
 <td><p>Тийм</p></td>
 </tr>
-<tr class="row-even"><td><p>WS100107_checkCitizenInfo</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#checkcitizeninfo"><span class="std std-ref">WS100107_checkCitizenInfo</span></a></p></td>
 <td><p>Иргэний мэдээлэл тулгах сервис</p></td>
 <td><p>Үгүй</p></td>
 <td><p>Үгүй</p></td>
 </tr>
-<tr class="row-odd"><td><p>WS100111_aimagCityInfo</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#aimagcityinfo"><span class="std std-ref">WS100111_aimagCityInfo</span></a></p></td>
 <td><p>Хот эсвэл Аймаг хайх сервис</p></td>
 <td><p>Үгүй</p></td>
 <td><p>Үгүй</p></td>
 </tr>
-<tr class="row-even"><td><p>WS100112_soumDistrictInfo</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#soumdistrictinfo"><span class="std std-ref">WS100112_soumDistrictInfo</span></a></p></td>
 <td><p>Дүүрэг эсвэл Сум хайх сервис</p></td>
 <td><p>Үгүй</p></td>
 <td><p>Үгүй</p></td>
 </tr>
-<tr class="row-odd"><td><p>WS100113_bagKhorooInfo</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#bagkhorooinfo"><span class="std std-ref">WS100113_bagKhorooInfo</span></a></p></td>
 <td><p>Баг эсвэл Хороо хайх сервис</p></td>
 <td><p>Үгүй</p></td>
 <td><p>Үгүй</p></td>
 </tr>
-<tr class="row-even"><td><p>WS100114_addressStreetInfo</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#addressstreetinfo"><span class="std std-ref">WS100114_addressStreetInfo</span></a></p></td>
 <td><p>Гудамжны мэдээлэл хайх сервис</p></td>
 <td><p>Үгүй</p></td>
 <td><p>Үгүй</p></td>
 </tr>
-<tr class="row-odd"><td><p>WS100115_addressApartmentInfo</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#addressapartmentinfo"><span class="std std-ref">WS100115_addressApartmentInfo</span></a></p></td>
 <td><p>Байрны мэдээлэл хайх сервис</p></td>
 <td><p>Үгүй</p></td>
 <td><p>Үгүй</p></td>
 </tr>
-<tr class="row-even"><td><p>WS100116_addressTypeInfo</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#addresstypeinfo"><span class="std std-ref">WS100116_addressTypeInfo</span></a></p></td>
 <td><p>Хаягийн төрлийн мэдээлэл хайх сервис</p></td>
 <td><p>Үгүй</p></td>
 <td><p>Үгүй</p></td>
 </tr>
-<tr class="row-odd"><td><p>WS100117_checkCitizenAddressInfo</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#checkcitizenaddressinfo"><span class="std std-ref">WS100117_checkCitizenAddressInfo</span></a></p></td>
 <td><p>Хаягийн мэдээлэл тулгах сервис</p></td>
 <td><p>Үгүй</p></td>
 <td><p>Үгүй</p></td>
 </tr>
-<tr class="row-even"><td><p>WS100125_checkCitizenRegnum</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#checkcitizenregnum"><span class="std std-ref">WS100125_checkCitizenRegnum</span></a></p></td>
 <td><p>Иргэний регистрийн дугаар үнэн эсэхийг шалгах сервис</p></td>
 <td><p>Үгүй</p></td>
 <td><p>Үгүй</p></td>
 </tr>
-<tr class="row-odd"><td><p>WS100128_getCitizenNoMarriegeInfo</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#getcitizennomarriegeinfo"><span class="std std-ref">WS100128_getCitizenNoMarriegeInfo</span></a></p></td>
 <td><p>Гэрлэлт бүртгэлгүй тухай мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Үл хөдлөх хөрөнгө</strong> - <a href="../_static/property-1.2.0.xml" target="_blank">https://xyp.gov.mn/property-1.2.0/ws?WSDL</a>.</p>
+<table class="colwidths-auto docutils align-default" id="id6">
+<caption><span class="caption-text">Үл хөдлөх хөрөнгийн веб сервис</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<tbody>
+<tr class="row-odd"><td><p>Сервисийн нэр</p></td>
+<td><p>Тодорхойлолт</p></td>
+<td><p>Иргэн баталгаажуулах эсэх</p></td>
+<td><p>Үйлчилгээний ажилтан баталгаажуулах эсэх</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100201_getPropertyInfo</p></td>
+<td><p>Үл хөдлөх хөрөнгийн мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100202_getPropertyList</p></td>
+<td><p>Үл хөдлөх хөрөнгийн жагсаалт авах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100203_isPropertyCheck</p></td>
+<td><p>Эд хөрөнгөтэй эсэх сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Хуулийн этгээд</strong> - <a href="../_static/legal-entity-1.2.0.xml" target="_blank">https://xyp.gov.mn/legal-entity-1.2.0/ws?WSDL</a>.</p>
+<table class="colwidths-auto docutils align-default" id="id7">
+<caption><span class="caption-text">Хуулийн этгээдийн веб сервис</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<tbody>
+<tr class="row-odd"><td><p>Сервисийн нэр</p></td>
+<td><p>Тодорхойлолт</p></td>
+<td><p>Иргэн баталгаажуулах эсэх</p></td>
+<td><p>Үйлчилгээний ажилтан баталгаажуулах эсэх</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100301_getLegalEntityInfo</p></td>
+<td><p>Хуулийн этгээдийн мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100306_getNonLegalEntityInfo</p></td>
+<td><p>Хуулийн этгээдийн бүртгэлгүй тухай мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Тээврийн хэрэгсэл</strong> - <a href="../_static/transport-1.2.0.xml" target="_blank">https://xyp.gov.mn/transport-1.2.0/ws?WSDL</a>.</p>
+<table class="colwidths-auto docutils align-default" id="id8">
+<caption><span class="caption-text">Тээврийн хэрэгслийн веб сервис</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<tbody>
+<tr class="row-odd"><td><p>Сервисийн нэр</p></td>
+<td><p>Тодорхойлолт</p></td>
+<td><p>Иргэн баталгаажуулах эсэх</p></td>
+<td><p>Үйлчилгээний ажилтан баталгаажуулах эсэх</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100401_getVehicleInfo</p></td>
+<td><p>Тээврийн хэрэгслийн мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100402_getVehicleOwnerHistoryList</p></td>
+<td><p>Тээврийн хэрэгслийн эзэмшигчийн түүхчилсэн мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100403_getVehiclePenaltyList</p></td>
+<td><p>Тээврийн хэрэгслийн торгуулийн мэдээлэл дамжуулах сервис</p></td>
+<td><p>Үгүй</p></td>
+<td><p>Үгүй</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100406_getCitizenVehicleList</p></td>
+<td><p>Иргэний тээврийн хэрэгслийн мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Нийгмийн даатгал</strong> - <a href="../_static/insurance-1.2.0.xml" target="_blank">https://xyp.gov.mn/insurance-1.2.0/ws?WSDL</a>.</p>
+<table class="colwidths-auto docutils align-default" id="id9">
+<caption><span class="caption-text">Нийгмийн даатгалын веб сервис</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<tbody>
+<tr class="row-odd"><td><p>Сервисийн нэр</p></td>
+<td><p>Тодорхойлолт</p></td>
+<td><p>Иргэн баталгаажуулах эсэх</p></td>
+<td><p>Үйлчилгээний ажилтан баталгаажуулах эсэх</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100501_getCitizenSalaryInfo</p></td>
+<td><p>Иргэний нийгмийн даатгалын мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100502_getCitizenPensionInquiry</p></td>
+<td><p>Тэтгэврийн лавлагааны мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Татвар</strong> - <a href="../_static/tax-1.2.0.xml" target="_blank">https://xyp.gov.mn/tax-1.2.0/ws?WSDL</a>.</p>
+<table class="colwidths-auto docutils align-default" id="id10">
+<caption><span class="caption-text">Татварын веб сервис</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<tbody>
+<tr class="row-odd"><td><p>Сервисийн нэр</p></td>
+<td><p>Тодорхойлолт</p></td>
+<td><p>Иргэн баталгаажуулах эсэх</p></td>
+<td><p>Үйлчилгээний ажилтан баталгаажуулах эсэх</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100601_getTaxPayerInfo</p></td>
+<td><p>Татвар төлөгчийн мэдээлэл дамжуулах сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100609_getVehiclePaidTaxHistory</p></td>
+<td><p>Тээврийн хэрэгслийн төлбөр төлсөн нэхэмжлэлийн түүхийг харуулах</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-even"><td><p>WS100610_getVehicleTaxPayableInfo</p></td>
+<td><p>Тээврийн хэрэгслийн төлөх ёстой нэхэмжлэлийн мэдэээлэл сервис</p></td>
+<td><p>Тийм</p></td>
+<td><p>Тийм</p></td>
+</tr>
+<tr class="row-odd"><td><p>WS100611_getVehicleInfo</p></td>
+<td><p>Тээврийн хэрэгслийн мэдээлэл дамжуулах сервис</p></td>
 <td><p>Тийм</p></td>
 <td><p>Тийм</p></td>
 </tr>
@@ -342,10 +485,8 @@
 </tr>
 </tbody>
 </table>
-</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><blockquote>
-<div><p>WS100001_listAccess-ийн үндсэн гаралтын утгууд</p>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><p>WS100001_listAccess-ийн үндсэн гаралтын утгууд</p>
 <p><strong>Гаралтын параметрүүд</strong></p>
-</div></blockquote>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 23%" />
@@ -420,10 +561,8 @@
 </tr>
 </tbody>
 </table>
-</div><div aria-labelledby="tab-1-1-2" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-2" name="1-2" role="tabpanel" tabindex="0"><blockquote>
-<div><p>WS100002_mock-ийн үндсэн гаралтын утгууд</p>
+</div><div aria-labelledby="tab-1-1-2" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-2" name="1-2" role="tabpanel" tabindex="0"><p>WS100002_mock-ийн үндсэн гаралтын утгууд</p>
 <p><strong>Гаралтын параметрүүд</strong></p>
-</div></blockquote>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 23%" />
@@ -510,10 +649,8 @@
 </tr>
 </tbody>
 </table>
-</div><div aria-labelledby="tab-2-2-2" class="sphinx-tabs-panel" hidden="true" id="panel-2-2-2" name="2-2" role="tabpanel" tabindex="0"><blockquote>
-<div><p>WS100004_getLogCount-ийн үндсэн гаралтын утгууд</p>
+</div><div aria-labelledby="tab-2-2-2" class="sphinx-tabs-panel" hidden="true" id="panel-2-2-2" name="2-2" role="tabpanel" tabindex="0"><p>WS100004_getLogCount-ийн үндсэн гаралтын утгууд</p>
 <p><strong>Гаралтын параметрүүд</strong></p>
-</div></blockquote>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 26%" />
@@ -537,6 +674,1565 @@
 </div>
 <div class="section" id="ws100101-getcitizenidcardinfo">
 <span id="idcardinfo"></span><h3>WS100101_getCitizenIDCardInfo<a class="headerlink" href="#ws100101-getcitizenidcardinfo" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-3-3-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-3-3-0" name="3-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-3-3-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-3-3-1" name="3-1" role="tab" tabindex="-1">Баталгаажуулалт</button><button aria-controls="panel-3-3-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-3-3-2" name="3-2" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-3-3-3" aria-selected="false" class="sphinx-tabs-tab" id="tab-3-3-3" name="3-3" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-3-3-0" class="sphinx-tabs-panel" id="panel-3-3-0" name="3-0" role="tabpanel" tabindex="0"><p>Иргэний үнэмлэхний мэдээлэл дамжуулах сервис</p>
+</div><div aria-labelledby="tab-3-3-1" class="sphinx-tabs-panel" hidden="true" id="panel-3-3-1" name="3-1" role="tabpanel" tabindex="0"><table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 56%" />
+<col style="width: 29%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>citizen</p></td>
+<td><p>Иргэний баталгаажуулах мэдээлэл</p></td>
+<td><p>object</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 76%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Иргэний регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>fingerprint</p></td>
+<td><p>Хурууны хээний мэдээлэл нь 310x310 хэмжээтэй PNG төрлийн файлыг base64 хэлбэрт оруулж илгээнэ.</p></td>
+<td><p>Base64 string</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 76%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Үйлчилгээний ажилтны регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>fingerprint</p></td>
+<td><p>Хурууны хээний мэдээлэл нь 310x310 хэмжээтэй PNG төрлийн файлыг base64 хэлбэрт оруулж илгээнэ.</p></td>
+<td><p>Base64 string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-3-3-2" class="sphinx-tabs-panel" hidden="true" id="panel-3-3-2" name="3-2" role="tabpanel" tabindex="0"><p>WS100101_getCitizenIDCardInfo-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 47%" />
+<col style="width: 35%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>civilID</p></td>
+<td><p>Иргэний хувийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-3-3-3" class="sphinx-tabs-panel" hidden="true" id="panel-3-3-3" name="3-3" role="tabpanel" tabindex="0"><p>WS100101_getCitizenIDCardInfo-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 40%" />
+<col style="width: 27%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>aimagCityCode</p></td>
+<td><p>Аймаг, хотын код</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>addressStreetName</p></td>
+<td><p>Гудамжны нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>addressDetial</p></td>
+<td><p>Хаяг дэлгэрэнгүй</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>aimagCityName</p></td>
+<td><p>Аймаг, хотын нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>civilld</p></td>
+<td><p>Иргэний хувийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>firstname</p></td>
+<td><p>Нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>lastname</p></td>
+<td><p>Овог</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>surname</p></td>
+<td><p>Ургийн овог</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>image</p></td>
+<td><p>Зураг</p></td>
+<td><p>Byte[]</p></td>
+</tr>
+<tr class="row-even"><td><p>nationality</p></td>
+<td><p>Үндэс</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>gender</p></td>
+<td><p>Хүйс</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>birthDate</p></td>
+<td><p>Төрсөн өдөр</p></td>
+<td><p>Date</p></td>
+</tr>
+<tr class="row-odd"><td><p>birthDateAsTest</p></td>
+<td><p>Төрсөн өдөр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>birthPlace</p></td>
+<td><p>Төрсөн газар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>passportIssueDate</p></td>
+<td><p>Үнэмлэх олгосон өдөр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>passportExpireDate</p></td>
+<td><p>Үнэмлэх хүчинтэй хугацаа</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>passportAddress</p></td>
+<td><p>Иргэний үнэмлэх дээрх хаяг</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>soumDistrictCode</p></td>
+<td><p>Сум, дүүргийн код</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>soumDistrictName</p></td>
+<td><p>Сум, дүүргийн нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>bagKhorooName</p></td>
+<td><p>Баг, хорооны нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>addressTownName</p></td>
+<td><p>Хотхоны нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>addressApartmentName</p></td>
+<td><p>Байрны нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>bagKhorooCode</p></td>
+<td><p>Баг, хорооны нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>addressRegionName</p></td>
+<td><p>Хорооллын нэр</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100102-getcitizenbirthinfo">
+<span id="birthinfo"></span><h3>WS100102_getCitizenBirthInfo<a class="headerlink" href="#ws100102-getcitizenbirthinfo" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-4-4-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-4-4-0" name="4-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-4-4-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-4-4-1" name="4-1" role="tab" tabindex="-1">Баталгаажуулалт</button><button aria-controls="panel-4-4-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-4-4-2" name="4-2" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-4-4-3" aria-selected="false" class="sphinx-tabs-tab" id="tab-4-4-3" name="4-3" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-4-4-0" class="sphinx-tabs-panel" id="panel-4-4-0" name="4-0" role="tabpanel" tabindex="0"><p>Иргэний төрсний гэрчилгээний мэдээлэл дамжуулах сервис.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>1988 оноос хойш төрсөн иргэний мэдээлэл дамжуулах боломжтой.</p>
+</div>
+</div><div aria-labelledby="tab-4-4-1" class="sphinx-tabs-panel" hidden="true" id="panel-4-4-1" name="4-1" role="tabpanel" tabindex="0"><table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 56%" />
+<col style="width: 29%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>citizen</p></td>
+<td><p>Иргэний баталгаажуулах мэдээлэл</p></td>
+<td><p>object</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 76%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Иргэний регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>fingerprint</p></td>
+<td><p>Хурууны хээний мэдээлэл нь 310x310 хэмжээтэй PNG төрлийн файлыг base64 хэлбэрт оруулж илгээнэ.</p></td>
+<td><p>Base64 string</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 76%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Үйлчилгээний ажилтны регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>fingerprint</p></td>
+<td><p>Хурууны хээний мэдээлэл нь 310x310 хэмжээтэй PNG төрлийн файлыг base64 хэлбэрт оруулж илгээнэ.</p></td>
+<td><p>Base64 string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-4-4-2" class="sphinx-tabs-panel" hidden="true" id="panel-4-4-2" name="4-2" role="tabpanel" tabindex="0"><p>WS100102_getCitizenBirthInfo-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 47%" />
+<col style="width: 35%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>civilID</p></td>
+<td><p>Иргэний хувийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-4-4-3" class="sphinx-tabs-panel" hidden="true" id="panel-4-4-3" name="4-3" role="tabpanel" tabindex="0"><p>WS100102_getCitizenBirthInfo-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 35%" />
+<col style="width: 30%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>father</p></td>
+<td><p>Эцэг</p></td>
+<td><p>CitizenBriefData</p></td>
+</tr>
+<tr class="row-odd"><td><p>mother</p></td>
+<td><p>Эх</p></td>
+<td><p>CitizenBriefData</p></td>
+</tr>
+<tr class="row-even"><td><p>registrationDate</p></td>
+<td><p>Бүртгэсэн огноо</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>registrationCity</p></td>
+<td><p>Бүртгэсэн аймаг, хот</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>registrationDistrict</p></td>
+<td><p>Бүртгэсэн сум, дүүрэг</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>registrationId</p></td>
+<td><p>Бүртгэлийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>lastname</p></td>
+<td><p>Нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>firstname</p></td>
+<td><p>Овог</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>civilId</p></td>
+<td><p>Иргэний хувийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>birthDate</p></td>
+<td><p>Төрсөн өдөр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>birthDateAsText</p></td>
+<td><p>Төрсөн өдөр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>birthPlace</p></td>
+<td><p>Төрсөн газар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>gender</p></td>
+<td><p>Хүйс</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100103-getcitizenaddressinfo">
+<span id="addressinfo"></span><h3>WS100103_getCitizenAddressInfo<a class="headerlink" href="#ws100103-getcitizenaddressinfo" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-5-5-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-5-5-0" name="5-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-5-5-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-5-5-1" name="5-1" role="tab" tabindex="-1">Баталгаажуулалт</button><button aria-controls="panel-5-5-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-5-5-2" name="5-2" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-5-5-3" aria-selected="false" class="sphinx-tabs-tab" id="tab-5-5-3" name="5-3" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-5-5-0" class="sphinx-tabs-panel" id="panel-5-5-0" name="5-0" role="tabpanel" tabindex="0"><p>Иргэний хаягийн мэдээлэл дамжуулах сервис</p>
+</div><div aria-labelledby="tab-5-5-1" class="sphinx-tabs-panel" hidden="true" id="panel-5-5-1" name="5-1" role="tabpanel" tabindex="0"><table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 56%" />
+<col style="width: 29%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>citizen</p></td>
+<td><p>Иргэний баталгаажуулах мэдээлэл</p></td>
+<td><p>object</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 76%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Иргэний регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>fingerprint</p></td>
+<td><p>Хурууны хээний мэдээлэл нь 310x310 хэмжээтэй PNG төрлийн файлыг base64 хэлбэрт оруулж илгээнэ.</p></td>
+<td><p>Base64 string</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 76%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Үйлчилгээний ажилтны регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>fingerprint</p></td>
+<td><p>Хурууны хээний мэдээлэл нь 310x310 хэмжээтэй PNG төрлийн файлыг base64 хэлбэрт оруулж илгээнэ.</p></td>
+<td><p>Base64 string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-5-5-2" class="sphinx-tabs-panel" hidden="true" id="panel-5-5-2" name="5-2" role="tabpanel" tabindex="0"><p>WS100103_getCitizenAddressInfo-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 47%" />
+<col style="width: 35%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>civilID</p></td>
+<td><p>Иргэний хувийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-5-5-3" class="sphinx-tabs-panel" hidden="true" id="panel-5-5-3" name="5-3" role="tabpanel" tabindex="0"><p>WS100103_getCitizenAddressInfo-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 35%" />
+<col style="width: 30%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>soumDistrictName</p></td>
+<td><p>Сум, дүүргийн нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>addressDetial</p></td>
+<td><p>Хаяг дэлгэрэнгүй</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>addressRegionName</p></td>
+<td><p>Хорооллын нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>aimagCityCode</p></td>
+<td><p>Аймаг, хотын код</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>aimagCityName</p></td>
+<td><p>Аймаг, хотын нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>soumDistrictCode</p></td>
+<td><p>Сум, дүүргийн код</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>bagKhorooName</p></td>
+<td><p>Баг, хорооны нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>addressTownName</p></td>
+<td><p>Хотхоны нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>addressApartmentName</p></td>
+<td><p>Байрны нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>fullAddress</p></td>
+<td><p>Хаягийн мэдээлэл</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>lastname</p></td>
+<td><p>Овог</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>firstname</p></td>
+<td><p>Нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>surname</p></td>
+<td><p>Ургийн овог</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>addressStreetName</p></td>
+<td><p>Гудамжны нэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>bagKhorooCode</p></td>
+<td><p>Баг, хорооны код</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100104-getcitizenmarriageinfo">
+<span id="marriageinfo"></span><h3>WS100104_getCitizenMarriageInfo<a class="headerlink" href="#ws100104-getcitizenmarriageinfo" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-6-6-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-6-6-0" name="6-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-6-6-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-6-6-1" name="6-1" role="tab" tabindex="-1">Баталгаажуулалт</button><button aria-controls="panel-6-6-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-6-6-2" name="6-2" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-6-6-3" aria-selected="false" class="sphinx-tabs-tab" id="tab-6-6-3" name="6-3" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-6-6-0" class="sphinx-tabs-panel" id="panel-6-6-0" name="6-0" role="tabpanel" tabindex="0"><p>Иргэний гэрлэлтийн мэдээлэл дамжуулах сервис</p>
+</div><div aria-labelledby="tab-6-6-1" class="sphinx-tabs-panel" hidden="true" id="panel-6-6-1" name="6-1" role="tabpanel" tabindex="0"><table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 56%" />
+<col style="width: 29%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>citizen</p></td>
+<td><p>Иргэний баталгаажуулах мэдээлэл</p></td>
+<td><p>object</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 76%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Иргэний регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>fingerprint</p></td>
+<td><p>Хурууны хээний мэдээлэл нь 310x310 хэмжээтэй PNG төрлийн файлыг base64 хэлбэрт оруулж илгээнэ.</p></td>
+<td><p>Base64 string</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 76%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Үйлчилгээний ажилтны регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>fingerprint</p></td>
+<td><p>Хурууны хээний мэдээлэл нь 310x310 хэмжээтэй PNG төрлийн файлыг base64 хэлбэрт оруулж илгээнэ.</p></td>
+<td><p>Base64 string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-6-6-2" class="sphinx-tabs-panel" hidden="true" id="panel-6-6-2" name="6-2" role="tabpanel" tabindex="0"><p>WS100104_getCitizenMarriageInfo-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 47%" />
+<col style="width: 35%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>civilID</p></td>
+<td><p>Иргэний хувийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-6-6-3" class="sphinx-tabs-panel" hidden="true" id="panel-6-6-3" name="6-3" role="tabpanel" tabindex="0"><p>WS100104_getCitizenMarriageInfo-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 33%" />
+<col style="width: 38%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>husband</p></td>
+<td><p>Нөхөр</p></td>
+<td><p>CitizenMarriageBriefData</p></td>
+</tr>
+<tr class="row-odd"><td><p>wife</p></td>
+<td><p>Эхнэр</p></td>
+<td><p>CitizenMarriageBriefData</p></td>
+</tr>
+<tr class="row-even"><td><p>isMarried</p></td>
+<td><p>Гэрлэсэн эсэх</p></td>
+<td><p>boolean</p></td>
+</tr>
+<tr class="row-odd"><td><p>marriedDate</p></td>
+<td><p>Гэрлэсэн огноо</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>registeredCity</p></td>
+<td><p>Бүртгүүлсэн аймаг, хот</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>registeredDistrict</p></td>
+<td><p>Бүртгүүлсэн сум, дүүрэг</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>registeredDate</p></td>
+<td><p>Бүртгүүлсэн огноо</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100105-getcitizenmarriagedivorceinfo">
+<span id="divorceinfo"></span><h3>WS100105_getCitizenMarriageDivorceInfo<a class="headerlink" href="#ws100105-getcitizenmarriagedivorceinfo" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-7-7-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-7-7-0" name="7-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-7-7-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-7-7-1" name="7-1" role="tab" tabindex="-1">Баталгаажуулалт</button><button aria-controls="panel-7-7-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-7-7-2" name="7-2" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-7-7-3" aria-selected="false" class="sphinx-tabs-tab" id="tab-7-7-3" name="7-3" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-7-7-0" class="sphinx-tabs-panel" id="panel-7-7-0" name="7-0" role="tabpanel" tabindex="0"><p>Иргэний гэрлэлт цуцалсан тухай мэдээлэл дамжуулах сервис</p>
+</div><div aria-labelledby="tab-7-7-1" class="sphinx-tabs-panel" hidden="true" id="panel-7-7-1" name="7-1" role="tabpanel" tabindex="0"><table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 56%" />
+<col style="width: 29%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>citizen</p></td>
+<td><p>Иргэний баталгаажуулах мэдээлэл</p></td>
+<td><p>object</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 76%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Иргэний регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>fingerprint</p></td>
+<td><p>Хурууны хээний мэдээлэл нь 310x310 хэмжээтэй PNG төрлийн файлыг base64 хэлбэрт оруулж илгээнэ.</p></td>
+<td><p>Base64 string</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 76%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Үйлчилгээний ажилтны регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>fingerprint</p></td>
+<td><p>Хурууны хээний мэдээлэл нь 310x310 хэмжээтэй PNG төрлийн файлыг base64 хэлбэрт оруулж илгээнэ.</p></td>
+<td><p>Base64 string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-7-7-2" class="sphinx-tabs-panel" hidden="true" id="panel-7-7-2" name="7-2" role="tabpanel" tabindex="0"><p>WS100105_getCitizenMarriageDivorceInfo-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 47%" />
+<col style="width: 35%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>civilID</p></td>
+<td><p>Иргэний хувийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-7-7-3" class="sphinx-tabs-panel" hidden="true" id="panel-7-7-3" name="7-3" role="tabpanel" tabindex="0"><p>WS100105_getCitizenMarriageDivorceInfo-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 35%" />
+<col style="width: 40%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>cancelCity</p></td>
+<td><p>Цуцлуулсан аймаг, хот</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>cancelDistrict</p></td>
+<td><p>Цуцлуулсан сум, дүүрэг</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>cancelDate</p></td>
+<td><p>Цуцлуулсан огноо</p></td>
+<td><p>boolean</p></td>
+</tr>
+<tr class="row-odd"><td><p>cancelId</p></td>
+<td><p>Цуцлуулсан дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>husband</p></td>
+<td><p>Нөхөр</p></td>
+<td><p>CitizenMarriageBriefData</p></td>
+</tr>
+<tr class="row-odd"><td><p>wife</p></td>
+<td><p>Эхнэр</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>courtCity</p></td>
+<td><p>Батлуулсан аймаг, хот</p></td>
+<td><p>CitizenMarriageBriefData</p></td>
+</tr>
+<tr class="row-odd"><td><p>courtDistrict</p></td>
+<td><p>Батлуулсан сум, дүүрэг</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>courtDate</p></td>
+<td><p>Батлуулсан огноо</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>courtId</p></td>
+<td><p>Батлуулсан дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>marriedDate</p></td>
+<td><p>Гэрлэсэн огноо</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100106-authorizecitizen">
+<span id="authorizecitizen"></span><h3>WS100106_authorizeCitizen<a class="headerlink" href="#ws100106-authorizecitizen" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-8-8-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-8-8-0" name="8-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-8-8-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-8-8-1" name="8-1" role="tab" tabindex="-1">Баталгаажуулалт</button><button aria-controls="panel-8-8-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-8-8-2" name="8-2" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-8-8-3" aria-selected="false" class="sphinx-tabs-tab" id="tab-8-8-3" name="8-3" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-8-8-0" class="sphinx-tabs-panel" id="panel-8-8-0" name="8-0" role="tabpanel" tabindex="0"><p>Иргэнийг хурууны хээгээр баталгаажуулах сервис</p>
+</div><div aria-labelledby="tab-8-8-1" class="sphinx-tabs-panel" hidden="true" id="panel-8-8-1" name="8-1" role="tabpanel" tabindex="0"><table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 56%" />
+<col style="width: 29%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>citizen</p></td>
+<td><p>Иргэний баталгаажуулах мэдээлэл</p></td>
+<td><p>object</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 76%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Иргэний регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>fingerprint</p></td>
+<td><p>Хурууны хээний мэдээлэл нь 310x310 хэмжээтэй PNG төрлийн файлыг base64 хэлбэрт оруулж илгээнэ.</p></td>
+<td><p>Base64 string</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 76%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Үйлчилгээний ажилтны регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>fingerprint</p></td>
+<td><p>Хурууны хээний мэдээлэл нь 310x310 хэмжээтэй PNG төрлийн файлыг base64 хэлбэрт оруулж илгээнэ.</p></td>
+<td><p>Base64 string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-8-8-2" class="sphinx-tabs-panel" hidden="true" id="panel-8-8-2" name="8-2" role="tabpanel" tabindex="0"><p>WS100106_authorizeCitizen-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 47%" />
+<col style="width: 35%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Регистрийн дугаар</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-8-8-3" class="sphinx-tabs-panel" hidden="true" id="panel-8-8-3" name="8-3" role="tabpanel" tabindex="0"><p>WS100106_authorizeCitizen-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 27%" />
+<col style="width: 46%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>result</p></td>
+<td><p>Үр дүн</p></td>
+<td><p>boolean</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100107-checkcitizeninfo">
+<span id="checkcitizeninfo"></span><h3>WS100107_checkCitizenInfo<a class="headerlink" href="#ws100107-checkcitizeninfo" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-9-9-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-9-9-0" name="9-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-9-9-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-9-9-1" name="9-1" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-9-9-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-9-9-2" name="9-2" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-9-9-0" class="sphinx-tabs-panel" id="panel-9-9-0" name="9-0" role="tabpanel" tabindex="0"><p>Иргэний мэдээлэл тулгах сервис</p>
+</div><div aria-labelledby="tab-9-9-1" class="sphinx-tabs-panel" hidden="true" id="panel-9-9-1" name="9-1" role="tabpanel" tabindex="0"><p>WS100107_checkCitizenInfo-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 48%" />
+<col style="width: 29%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>firstName</p></td>
+<td><p>Иргэний нэр</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-odd"><td><p>lastName</p></td>
+<td><p>Иргэний овог</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Иргэний регистрийн дугаар</p></td>
+<td><p>String</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-9-9-2" class="sphinx-tabs-panel" hidden="true" id="panel-9-9-2" name="9-2" role="tabpanel" tabindex="0"><p>WS100107_checkCitizenInfo-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 50%" />
+<col style="width: 29%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>isMatched</p></td>
+<td><p>Мэдээлэл таарч байгаа эсэх</p></td>
+<td><p>boolean</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100111-aimagcityinfo">
+<span id="aimagcityinfo"></span><h3>WS100111_aimagCityInfo<a class="headerlink" href="#ws100111-aimagcityinfo" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-10-10-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-10-10-0" name="10-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-10-10-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-10-10-1" name="10-1" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-10-10-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-10-10-2" name="10-2" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-10-10-0" class="sphinx-tabs-panel" id="panel-10-10-0" name="10-0" role="tabpanel" tabindex="0"><p>Хот эсвэл Аймаг хайх сервис</p>
+</div><div aria-labelledby="tab-10-10-1" class="sphinx-tabs-panel" hidden="true" id="panel-10-10-1" name="10-1" role="tabpanel" tabindex="0"><p>WS100111_aimagCityInfo-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 48%" />
+<col style="width: 29%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-10-10-2" class="sphinx-tabs-panel" hidden="true" id="panel-10-10-2" name="10-2" role="tabpanel" tabindex="0"><p>WS100111_aimagCityInfo-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 44%" />
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>listData</p></td>
+<td><p>Аймаг/хотын мэдээлэл</p></td>
+<td><p>List&lt;T&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>listData</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 29%" />
+<col style="width: 29%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Өгөгдөл</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p>aimagCityInfoDetailData</p></td>
+<td><p>aimagCityCode</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>aimagCityName</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100112-soumdistrictinfo">
+<span id="soumdistrictinfo"></span><h3>WS100112_soumDistrictInfo<a class="headerlink" href="#ws100112-soumdistrictinfo" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-11-11-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-11-11-0" name="11-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-11-11-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-11-11-1" name="11-1" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-11-11-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-11-11-2" name="11-2" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-11-11-0" class="sphinx-tabs-panel" id="panel-11-11-0" name="11-0" role="tabpanel" tabindex="0"><p>Дүүрэг эсвэл Сум хайх сервис</p>
+</div><div aria-labelledby="tab-11-11-1" class="sphinx-tabs-panel" hidden="true" id="panel-11-11-1" name="11-1" role="tabpanel" tabindex="0"><p>WS100112_soumDistrictInfo-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 44%" />
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>aimagCityCode</p></td>
+<td><p>Аймаг/хотын код</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-11-11-2" class="sphinx-tabs-panel" hidden="true" id="panel-11-11-2" name="11-2" role="tabpanel" tabindex="0"><p>WS100112_soumDistrictInfo-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 44%" />
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>listData</p></td>
+<td><p>Сум/дүүргийн мэдээлэл</p></td>
+<td><p>List&lt;T&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>listData</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 32%" />
+<col style="width: 26%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Өгөгдөл</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p>soumDistrictInfoDetailData</p></td>
+<td><p>soumDistrictCode</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>soumDistrictName</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100113-bagkhorooinfo">
+<span id="bagkhorooinfo"></span><h3>WS100113_bagKhorooInfo<a class="headerlink" href="#ws100113-bagkhorooinfo" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-12-12-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-12-12-0" name="12-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-12-12-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-12-12-1" name="12-1" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-12-12-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-12-12-2" name="12-2" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-12-12-0" class="sphinx-tabs-panel" id="panel-12-12-0" name="12-0" role="tabpanel" tabindex="0"><p>Баг эсвэл Хороо хайх сервис</p>
+</div><div aria-labelledby="tab-12-12-1" class="sphinx-tabs-panel" hidden="true" id="panel-12-12-1" name="12-1" role="tabpanel" tabindex="0"><p>WS100113_bagKhorooInfo-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 34%" />
+<col style="width: 34%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>aimagCityCode</p></td>
+<td><p>Аймаг/хотын код</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>soumDistrictCode</p></td>
+<td><p>Сум/дүүргийн код</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-12-12-2" class="sphinx-tabs-panel" hidden="true" id="panel-12-12-2" name="12-2" role="tabpanel" tabindex="0"><p>WS100113_bagKhorooInfo-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 44%" />
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>listData</p></td>
+<td><p>Сум/дүүргийн мэдээлэл</p></td>
+<td><p>List&lt;T&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>listData</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 30%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Өгөгдөл</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p>serviceBagKhorooInfoRequestData</p></td>
+<td><p>aimagCityCode</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>soumDistrictCode</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100114-addressstreetinfo">
+<span id="addressstreetinfo"></span><h3>WS100114_addressStreetInfo<a class="headerlink" href="#ws100114-addressstreetinfo" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-13-13-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-13-13-0" name="13-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-13-13-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-13-13-1" name="13-1" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-13-13-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-13-13-2" name="13-2" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-13-13-0" class="sphinx-tabs-panel" id="panel-13-13-0" name="13-0" role="tabpanel" tabindex="0"><p>Гудамжны мэдээлэл хайх сервис</p>
+</div><div aria-labelledby="tab-13-13-1" class="sphinx-tabs-panel" hidden="true" id="panel-13-13-1" name="13-1" role="tabpanel" tabindex="0"><p>WS100114_addressStreetInfo-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 34%" />
+<col style="width: 34%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>aimagCityCode</p></td>
+<td><p>Аймаг/хотын код</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>soumDistrictCode</p></td>
+<td><p>Сум/дүүргийн код</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>bagKhorooCode</p></td>
+<td><p>Баг/хорооны код</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-13-13-2" class="sphinx-tabs-panel" hidden="true" id="panel-13-13-2" name="13-2" role="tabpanel" tabindex="0"><p>WS100114_addressStreetInfo-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 40%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>listData</p></td>
+<td><p>Гудамжны мэдээлэл</p></td>
+<td><p>List&lt;T&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>listData</strong>
++—————————————+———————–+——————-+
+|   Нэр                                 |   Өгөгдөл             |   Өгөгдлийн төрөл |
++—————————————+———————–+——————-+
+|   serviceAddressStreetInfoRequestData |   aimagCityCode       | string            |
++                                       +———————–+——————-+
+|                                       |   bagKhorooCode       | string            |
++                                       +———————–+——————-+
+|                                       |   soumDistrictCode    |  string           |
++—————————————+———————–+——————-+</p>
+</div></div>
+</div>
+<div class="section" id="ws100115-addressapartmentinfo">
+<span id="addressapartmentinfo"></span><h3>WS100115_addressApartmentInfo<a class="headerlink" href="#ws100115-addressapartmentinfo" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-14-14-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-14-14-0" name="14-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-14-14-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-14-14-1" name="14-1" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-14-14-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-14-14-2" name="14-2" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-14-14-0" class="sphinx-tabs-panel" id="panel-14-14-0" name="14-0" role="tabpanel" tabindex="0"><p>Байрны мэдээлэл хайх сервис</p>
+</div><div aria-labelledby="tab-14-14-1" class="sphinx-tabs-panel" hidden="true" id="panel-14-14-1" name="14-1" role="tabpanel" tabindex="0"><p>WS100115_addressApartmentInfo-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 34%" />
+<col style="width: 34%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>aimagCityCode</p></td>
+<td><p>Аймаг/хотын код</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>soumDistrictCode</p></td>
+<td><p>Сум/дүүргийн код</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>bagKhorooCode</p></td>
+<td><p>Баг/хорооны код</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-14-14-2" class="sphinx-tabs-panel" hidden="true" id="panel-14-14-2" name="14-2" role="tabpanel" tabindex="0"><p>WS100115_addressApartmentInfo-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 38%" />
+<col style="width: 35%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>listData</p></td>
+<td><p>Байрны мэдээлэл</p></td>
+<td><p>List&lt;T&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>listData</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 51%" />
+<col style="width: 27%" />
+<col style="width: 22%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Өгөгдөл</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><p>serviceAddressApartmentInfoRequestData</p></td>
+<td><p>aimagCityCode</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>bagKhorooCode</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>soumDistrictCode</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100116-addresstypeinfo">
+<span id="addresstypeinfo"></span><h3>WS100116_addressTypeInfo<a class="headerlink" href="#ws100116-addresstypeinfo" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-15-15-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-15-15-0" name="15-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-15-15-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-15-15-1" name="15-1" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-15-15-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-15-15-2" name="15-2" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-15-15-0" class="sphinx-tabs-panel" id="panel-15-15-0" name="15-0" role="tabpanel" tabindex="0"><p>Хаягийн төрлийн мэдээлэл хайх сервис</p>
+</div><div aria-labelledby="tab-15-15-1" class="sphinx-tabs-panel" hidden="true" id="panel-15-15-1" name="15-1" role="tabpanel" tabindex="0"><p>WS100116_addressTypeInfo-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 34%" />
+<col style="width: 34%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-15-15-2" class="sphinx-tabs-panel" hidden="true" id="panel-15-15-2" name="15-2" role="tabpanel" tabindex="0"><p>WS100116_addressTypeInfo-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 48%" />
+<col style="width: 29%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>listData</p></td>
+<td><p>Хаягийн төрлийн мэдээлэл</p></td>
+<td><p>List&lt;T&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>listData</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 32%" />
+<col style="width: 26%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Өгөгдөл</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p>addressTypeInfoDetailData</p></td>
+<td><p>addressTypeCode</p></td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>addressTypeName</p></td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100117-checkcitizenaddressinfo">
+<span id="checkcitizenaddressinfo"></span><h3>WS100117_checkCitizenAddressInfo<a class="headerlink" href="#ws100117-checkcitizenaddressinfo" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-16-16-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-16-16-0" name="16-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-16-16-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-16-16-1" name="16-1" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-16-16-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-16-16-2" name="16-2" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-16-16-0" class="sphinx-tabs-panel" id="panel-16-16-0" name="16-0" role="tabpanel" tabindex="0"><p>Хаягийн мэдээлэл тулгах сервис</p>
+</div><div aria-labelledby="tab-16-16-1" class="sphinx-tabs-panel" hidden="true" id="panel-16-16-1" name="16-1" role="tabpanel" tabindex="0"><p>WS100117_checkCitizenAddressInfo-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 49%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+<td><p>Оролтын утгууд</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Иргэний регистрийн дугаар</p></td>
+<td><p>String</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-odd"><td><p>aimagCityCode</p></td>
+<td><p>Аймаг/хотын код</p></td>
+<td><p>String</p></td>
+<td><p><a class="reference internal" href="#aimagcityinfo"><span class="std std-ref">WS100111_aimagCityInfo</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>soumDistrictCode</p></td>
+<td><p>Сум/дүүргйн код</p></td>
+<td><p>String</p></td>
+<td><p><a class="reference internal" href="#soumdistrictinfo"><span class="std std-ref">WS100112_soumDistrictInfo</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>apartmentId</p></td>
+<td><p>Байрны код</p></td>
+<td><p>String</p></td>
+<td><p><a class="reference internal" href="#addressapartmentinfo"><span class="std std-ref">WS100115_addressApartmentInfo</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bagKhorooCode</p></td>
+<td><p>Баг/хорооны код</p></td>
+<td><p>String</p></td>
+<td><p><a class="reference internal" href="#bagkhorooinfo"><span class="std std-ref">WS100113_bagKhorooInfo</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>streetId</p></td>
+<td><p>Гудамжны код</p></td>
+<td><p>String</p></td>
+<td><p><a class="reference internal" href="#addressstreetinfo"><span class="std std-ref">WS100114_addressStreetInfo</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-16-16-2" class="sphinx-tabs-panel" hidden="true" id="panel-16-16-2" name="16-2" role="tabpanel" tabindex="0"><p>WS100117_checkCitizenAddressInfo-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 48%" />
+<col style="width: 23%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>isValidAimagCity</p></td>
+<td><p>Аймаг/хотын мэдээлэл таарсан эсэх</p></td>
+<td><p>boolean</p></td>
+</tr>
+<tr class="row-odd"><td><p>isValidBagKhoroo</p></td>
+<td><p>Баг/хорооны мэдээлэл таарсан эсэх</p></td>
+<td><p>boolean</p></td>
+</tr>
+<tr class="row-even"><td><p>isValidStreet</p></td>
+<td><p>Гудамжны мэдээлэл таарсан эсэх</p></td>
+<td><p>boolean</p></td>
+</tr>
+<tr class="row-odd"><td><p>isValidApartment</p></td>
+<td><p>Байрны мэдээлэл таарсан эсэх</p></td>
+<td><p>boolean</p></td>
+</tr>
+<tr class="row-even"><td><p>isValid</p></td>
+<td><p>Хаягийн мэдээлэл таарсан эсэх</p></td>
+<td><p>boolean</p></td>
+</tr>
+<tr class="row-odd"><td><p>isValidSoumDistrict</p></td>
+<td><p>Сум/дүүргийн мэдээлэл таарсан эсэх</p></td>
+<td><p>boolean</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100125-checkcitizenregnum">
+<span id="checkcitizenregnum"></span><h3>WS100125_checkCitizenRegnum<a class="headerlink" href="#ws100125-checkcitizenregnum" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-17-17-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-17-17-0" name="17-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-17-17-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-17-17-1" name="17-1" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-17-17-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-17-17-2" name="17-2" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-17-17-0" class="sphinx-tabs-panel" id="panel-17-17-0" name="17-0" role="tabpanel" tabindex="0"><p>Иргэний регистрийн дугаар үнэн эсэхийг шалгах</p>
+</div><div aria-labelledby="tab-17-17-1" class="sphinx-tabs-panel" hidden="true" id="panel-17-17-1" name="17-1" role="tabpanel" tabindex="0"><p>WS100125_checkCitizenRegnum-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 38%" />
+<col style="width: 25%" />
+<col style="width: 22%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+<td><p>Оролтын утгууд</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Иргэний регистрийн дугаар</p></td>
+<td><p>String</p></td>
+<td><p>String</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-17-17-2" class="sphinx-tabs-panel" hidden="true" id="panel-17-17-2" name="17-2" role="tabpanel" tabindex="0"><p>WS100125_checkCitizenRegnum-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 33%" />
+<col style="width: 42%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>isValid</p></td>
+<td><p>Үнэн эсэх</p></td>
+<td><p>boolean</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="ws100128-getcitizennomarriegeinfo">
+<span id="getcitizennomarriegeinfo"></span><h3>WS100128_getCitizenNoMarriegeInfo<a class="headerlink" href="#ws100128-getcitizennomarriegeinfo" title="Permalink to this headline">¶</a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-18-18-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-18-18-0" name="18-0" role="tab" tabindex="0">Тайлбар</button><button aria-controls="panel-18-18-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-18-18-1" name="18-1" role="tab" tabindex="-1">Оролт</button><button aria-controls="panel-18-18-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-18-18-2" name="18-2" role="tab" tabindex="-1">Гаралт</button></div><div aria-labelledby="tab-18-18-0" class="sphinx-tabs-panel" id="panel-18-18-0" name="18-0" role="tabpanel" tabindex="0"><p>Гэрлэлт бүртгэлгүй тухай мэдээлэл дамжуулах сервис</p>
+</div><div aria-labelledby="tab-18-18-1" class="sphinx-tabs-panel" hidden="true" id="panel-18-18-1" name="18-1" role="tabpanel" tabindex="0"><p>WS100128_getCitizenNoMarriegeInfo-ийн үндсэн оролтын утгууд</p>
+<p><strong>Оролтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 38%" />
+<col style="width: 25%" />
+<col style="width: 22%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+<td><p>Оролтын утгууд</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Иргэний регистрийн дугаар</p></td>
+<td><p>String</p></td>
+<td><p>String</p></td>
+</tr>
+</tbody>
+</table>
+</div><div aria-labelledby="tab-18-18-2" class="sphinx-tabs-panel" hidden="true" id="panel-18-18-2" name="18-2" role="tabpanel" tabindex="0"><p>WS100128_getCitizenNoMarriegeInfo-ийн үндсэн гаралтын утгууд</p>
+<p><strong>Гаралтын параметрүүд</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 48%" />
+<col style="width: 29%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Нэр</p></td>
+<td><p>Тайлбар</p></td>
+<td><p>Өгөгдлийн төрөл</p></td>
+</tr>
+<tr class="row-even"><td><p>status</p></td>
+<td><p>Төлөв</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-odd"><td><p>firstName</p></td>
+<td><p>Нэр</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>lastName</p></td>
+<td><p>Эцэг/эх/-ийн нэр</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-odd"><td><p>surname</p></td>
+<td><p>Ургийн овог</p></td>
+<td><p>String</p></td>
+</tr>
+<tr class="row-even"><td><p>regnum</p></td>
+<td><p>Иргэний регистрийн дугаар</p></td>
+<td><p>String</p></td>
+</tr>
+</tbody>
+</table>
+</div></div>
 </div>
 </div>
 </div>
