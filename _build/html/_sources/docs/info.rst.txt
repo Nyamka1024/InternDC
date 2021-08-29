@@ -3,7 +3,7 @@
 Танилцуулга
 ===========
 
-.. image:: xyp_logo.png
+.. image:: ../pics/xyp_logo.png
    :align: left
    :width: 90px
 
